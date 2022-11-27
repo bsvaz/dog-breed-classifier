@@ -44,9 +44,11 @@ def get_pet_labels(image_dir):
         label = re.sub(r'[0-9]', '', filename)
         label = re.sub('.jpg', '', label)
         label = re.sub('_', ' ', label)
-        label.strip()
+        label = label.strip()
         label = label.lower()
 
         results_dic[filename] = [label]
 
     return results_dic
+
+

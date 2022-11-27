@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/classify_images.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                 
+# PROGRAMMER: Bruno Vaz
+# DATE CREATED: 11/27/2022                             
 # REVISED DATE: 
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
@@ -22,13 +22,8 @@
 ##
 # Imports classifier function for using CNN to classify images 
 from classifier import classifier 
-
-# TODO 3: Define classify_images function below, specifically replace the None
-#       below by the function definition of the classify_images function. 
-#       Notice that this function doesn't return anything because the 
-#       results_dic dictionary that is passed into the function is a mutable 
-#       data type so no return is needed.
-# 
+from os import listdir
+ 
 def classify_images(images_dir, results_dic, model):
     """
     Creates classifier labels with classifier function, compares pet labels to 
@@ -37,8 +32,8 @@ def classify_images(images_dir, results_dic, model):
     format the classifier labels so that they will match your pet image labels.
     The format will include putting the classifier labels in all lower case 
     letters and strip the leading and trailing whitespace characters from them.
-    For example, the Classifier function returns = 'Maltese dog, Maltese terrier, Maltese' 
-    so the classifier label = 'maltese dog, maltese terrier, maltese'.
+    For example, the Classifier function returns = 'Maltese dog, Maltese terrier,
+    Maltese' yso the classifier label = 'maltese dog, maltese terrier, maltese'.
     Recall that dog names from the classifier function can be a string of dog 
     names separated by commas when a particular breed of dog has multiple dog 
     names associated with that breed. For example, you will find pet images of
@@ -65,4 +60,17 @@ def classify_images(images_dir, results_dic, model):
      Returns:
            None - results_dic is mutable data type so no return needed.         
     """
-    None 
+
+    for filename in listdir(images_dir):
+        
+        classifier_label = classifier('./pet_images/' + filename, model)
+        formatted_classifier_label = classifier_label.lower()
+        
+        if results_dic[filename][0] in formatted_classifier_label:
+            result = 1
+        else:
+            result = 0
+        
+        results_dic[filename].extend([formatted_classifier_label, result])
+
+    

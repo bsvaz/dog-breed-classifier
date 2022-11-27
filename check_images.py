@@ -22,8 +22,7 @@
 #    python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 ##
 '''NOTES:
-    NEED TO INSTALL torchvision
-    RESOLVE DEPRECATEDS'''
+    NEED TO INSTALL torchvision'''
 
 # Imports python modules
 from time import time, sleep
@@ -57,16 +56,7 @@ def main():
     # Function that checks Pet Images in the results Dictionary using results    
     check_creating_pet_image_labels(results)
 
-
-    # TODO 3: Define classify_images function within the file classiy_images.py
-    # Once the classify_images function has been defined replace first 'None' 
-    # in the function call with in_arg.dir and replace the last 'None' in the
-    # function call with in_arg.arch  Once you have done the replacements your
-    # function call should look like this: 
-    #             classify_images(in_arg.dir, results, in_arg.arch)
-    # Creates Classifier Labels with classifier function, Compares Labels, 
-    # and adds these results to the results dictionary - results
-    classify_images(None, results, None)
+    classify_images(in_arg.dir, results, in_arg.arch)
 
     # Function that checks Results Dictionary using results    
     check_classifying_images(results)    
