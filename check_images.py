@@ -62,16 +62,7 @@ def main():
     check_classifying_images(results)    
 
     
-    # TODO 4: Define adjust_results4_isadog function within the file 
-    # adjust_results4_isadog.py
-    # Once the adjust_results4_isadog function has been defined replace 'None' 
-    # in the function call with in_arg.dogfile  Once you have done the 
-    # replacements your function call should look like this: 
-    #          adjust_results4_isadog(results, in_arg.dogfile)
-    # Adjusts the results dictionary to determine if classifier correctly 
-    # classified images as 'a dog' or 'not a dog'. This demonstrates if 
-    # model can correctly classify dog images as dogs (regardless of breed)
-    adjust_results4_isadog(results, None)
+    adjust_results4_isadog(results, in_arg.dogfile)
 
     # Function that checks Results Dictionary for is-a-dog adjustment using 
     # results
