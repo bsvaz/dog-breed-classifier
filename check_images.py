@@ -69,14 +69,6 @@ def main():
     check_classifying_labels_as_dogs(results)
 
 
-    # TODO 5: Define calculates_results_stats function within the file 
-    # calculates_results_stats.py
-    # This function creates the results statistics dictionary that contains a
-    # summary of the results statistics (this includes counts & percentages). 
-    # This dictionary is returned from the function call as the variable 
-    # results_stats    
-    # Calculates results of run and puts statistics in the Results Statistics
-    # Dictionary - called results_stats
     results_stats = calculates_results_stats(results)
 
     # Function that checks Results Statistics Dictionary using results_stats
