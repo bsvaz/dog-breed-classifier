@@ -5,27 +5,15 @@
 # PROGRAMMER: Bruno Vaz
 # DATE CREATED: 11/04/2022                               
 # REVISED DATE: 
-# PURPOSE: Classifies pet images using a pretrained CNN model, compares these
-#          classifications to the true identity of the pets in the images, and
-#          summarizes how well the CNN performed on the image classification task. 
-#          Note that the true identity of the pet (or object) in the image is 
-#          indicated by the filename of the image. Therefore, your program must
-#          first extract the pet image label from the filename before
-#          classifying the images using the pretrained CNN model. With this 
-#          program we will be comparing the performance of 3 different CNN model
-#          architectures to determine which provides the 'best' classification.
-#
 # Use argparse Expected Call with <> indicating expected user input:
 #      python check_images.py --dir <directory with images> --arch <model>
 #             --dogfile <file that contains dognames>
 #   Example call:
 #    python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 ##
-'''NOTES:
-    NEED TO INSTALL torchvision'''
 
 # Imports python modules
-from time import time, sleep
+from time import time
 
 # Imports print functions that check the lab
 from print_functions_for_lab_checks import *
@@ -40,6 +28,7 @@ from print_results import print_results
 
 # Main program function defined below
 def main():
+    
     # Measures total program runtime by collecting start time
     start_time = time()
     
@@ -49,34 +38,42 @@ def main():
     # Function that checks command line arguments using in_arg  
     check_command_line_arguments(in_arg)
 
-    
     # Create pet labels
     results = get_pet_labels(in_arg.dir)
 
-    # Function that checks Pet Images in the results Dictionary using results    
+    # Function that checks Pet Images in the Results Dictionary using results    
     check_creating_pet_image_labels(results)
 
+    # Function that classify the images and update Results Dictionary with those
+    print('INICIO CLASSIFY_IMAGES')
     classify_images(in_arg.dir, results, in_arg.arch)
-
+    print('FIM CLASSIFY_IMAGES')
     # Function that checks Results Dictionary using results    
+    print('INICIO CHECK_CLASSIFY_IMAGES')
     check_classifying_images(results)    
-
-    
+    print('FIM CHECK_CLASSIFY_IMAGES')
+    # Adjusts the results dictionary to determine if classifier correctly 
+    # classified images 'as a dog' or 'not a dog' 
+    print('INICIO ADJUST_RESULTS')
     adjust_results4_isadog(results, in_arg.dogfile)
-
+    print('FIM ADJUST_RESULTS')
     # Function that checks Results Dictionary for is-a-dog adjustment using 
     # results
+    print('INICIO CHECK_CLASSIFYING_LABELS_AS_DOGS')
     check_classifying_labels_as_dogs(results)
-
-
+    print('FIM CHECK_CLASSIFYING_LABELS_AS_DOGS')
+    # Calculates statistics of the results
+    print('INICIO CALCULATES_RESULTS_STATS')
     results_stats = calculates_results_stats(results)
-
+    print('FIM CALCULATES_RESULTS_STATS')
     # Function that checks Results Statistics Dictionary using results_stats
+    print('INICIO CHECK_CALCULATING_RESULTS')
     check_calculating_results(results, results_stats)
-
-
+    print('FIM CHECK_CALCULATING_RESULTS')
+    # Print the results
+    print('INICIO PRINT_RESULTS')
     print_results(results, results_stats, in_arg.arch, True, True)
-    
+    print('FIM PRINT_RESULTS')
     # Measure total program runtime by collecting end time
     end_time = time()
     
