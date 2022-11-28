@@ -1,4 +1,5 @@
 import ast
+from PIL import __version__
 from PIL import Image
 import torchvision.transforms as transforms
 from torch.autograd import Variable
