@@ -66,13 +66,9 @@ def calculates_results_stats(results_dic):
     """        
 
     results_stats_dic = {}
-
-    results_stats_dic['n_images'] = len(results_dic)
-    
-    print(results_dic.values())
-    print(list(results_dic.values()))
-    print(list(results_dic.values()))
     values = results_dic.values()
+    
+    results_stats_dic['n_images'] = len(results_dic)
     results_stats_dic['n_dogs_img'] = sum(is_dog[3] for is_dog in values)
     results_stats_dic['n_notdogs_img'] = results_stats_dic['n_images'] - results_stats_dic['n_dogs_img']
     results_stats_dic['n_match'] = sum(is_match[2] for is_match in values)

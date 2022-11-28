@@ -63,7 +63,7 @@ def classify_images(images_dir, results_dic, model):
 
     for filename in listdir(images_dir):
         
-        classifier_label = classifier('./pet_images/' + filename, model)
+        classifier_label = classifier(images_dir + filename, model)
         formatted_classifier_label = classifier_label.lower()
         
         if results_dic[filename][0] in formatted_classifier_label:

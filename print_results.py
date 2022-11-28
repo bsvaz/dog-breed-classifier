@@ -86,7 +86,7 @@ def print_results(results_dic, results_stats_dic, model,
 
     if print_incorrect_breed == True:
         incorrect_breed_keys = [key for key, value in results_dic.items() if 
-                                value[2] == 1 and value[3] == 1]
+                                value[2] != 1 and value[3] == 1]
         print()
         print('Incorrect breed classified: ')
         for item in incorrect_breed_keys:

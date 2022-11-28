@@ -1,0 +1,83 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:           Cairn_Terrier_01.jpg  label:              cairn terrier
+ 2 key:                    Wolf_01.jpg  label:                       wolf
+ 3 key:           Cairn_Terrier_02.jpg  label:              cairn terrier
+ 4 key:                     Mug_01.jpg  label:                        mug
+
+     MATCH:
+
+          Cairn_Terrier_01.jpg: 
+Real:              cairn terrier   Classifier:           cairn, cairn terrier
+
+                   Wolf_01.jpg: 
+Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, canis lupus
+
+                    Mug_01.jpg: 
+Real:                        mug   Classifier:                     coffee mug
+
+ NOT A MATCH:
+
+          Cairn_Terrier_02.jpg: 
+Real:              cairn terrier   Classifier:            miniature schnauzer
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+{'petit basset griffon vendeen', 'black-and-tan coonhound', 'tibetan mastiff', 'english springer spaniel', 'chow chow', 'basset, basset hound', 'cocker spaniel', 'borzoi', 'english foxhound', 'entlebucher', 'alaskan malamute', 'havanese', 'basenji', 'maltese dog, maltese terrier, maltese', 'glen of imaal terrier', 'irish water spaniel', 'weimaraner', 'german wirehaired pointer', 'silky terrier', 'papillon', 'german shorthaired pointer', 'canaan dog', 'cairn, cairn terrier', 'norwegian elkhound, elkhound', 'toy terrier', 'irish setter', 'cardigan, cardigan welsh corgi, corgi', 'wire-haired fox terrier', 'pug', 'newfoundland, newfoundland dog', 'great dane', 'belgian malinois', 'afghan hound, afghan', 'anatolian shepherd dog', 'mastiff', 'finnish spitz', 'staffordshire bull terrier', 'toy poodle', 'dachshund', 'entlebucher mountain dog', 'pointer', 'cairn terrier', 'flat-coated retriever', 'english springer, english springer spaniel', 'lowchen', 'miniature poodle', 'boxer', 'american water spaniel', 'lhasa apso', 'maltese', 'dandie dinmont terrier', 'icelandic sheepdog', 'american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier', 'malinois', 'akita', 'saint bernard', 'scottish terrier', 'tibetan terrier', 'kuvasz', 'walker hound, walker foxhound', 'welsh springer spaniel', 'irish terrier', 'norwegian buhund', 'beauceron', 'leonberg', 'redbone', 'afghan hound', 'italian greyhound', 'lakeland terrier', 'soft-coated wheaten terrier', 'japanese spaniel', 'border collie', 'black russian terrier', 'nova scotia duck tolling retriever', 'schnauzer', 'chihuahua', 'brabancon griffon', 'english setter', 'pug, pug-dog', 'clumber, clumber spaniel', 'bullmastiff', 'norwich terrier', 'chesapeake bay retriever', 'neapolitan mastiff', 'bedlington terrier', 'greyhound', 'cardigan welsh corgi', 'otterhound, otter hound', 'giant schnauzer', 'standard poodle, poodle', 'collie', 'cavalier king charles spaniel', 'vizsla, hungarian pointer', 'pekinese, pekingese, peke', 'malamute, malemute, alaskan malamute', 'parson russell terrier', 'sealyham terrier', 'american foxhound', 'scotch terrier, scottish terrier, scottie', 'bulldog', 'saint bernard, st bernard', 'doberman pinscher', 'bluetick', 'tibetan terrier, chrysanthemum dog', 'great pyrenees', 'pekingese', 'leonberger', 'walker hound', 'samoyed', 'keeshond', 'brussels griffon', 'wirehaired pointing griffon', 'smooth fox terrier', 'sealyham terrier, sealyham', 'black and tan coonhound', 'pembroke, pembroke welsh corgi, corgi', 'plott', 'kerry blue terrier', 'bichon frise', 'bouvier des flandres', 'curly-coated retriever', 'bouvier des flandres, bouviers des flandres', 'pharaoh hound', 'american staffordshire terrier', 'bloodhound, sleuthhound', 'dog', 'miniature schnauzer', 'lhasa, lhasa apso', 'golden retriever', 'west highland white terrier', 'sussex spaniel', 'norwegian lundehund', 'belgian tervuren', 'clumber spaniel', 'american eskimo dog', 'boykin spaniel', 'japanese chin', 'german shepherd, german shepherd dog, german police dog, alsatian', 'cocker spaniel, english cocker spaniel, cocker', 'yorkshire terrier', 'affenpinscher', 'shetland sheepdog, shetland sheep dog, shetland', 'brittany spaniel', 'saluki', 'norfolk terrier', 'labrador retriever', 'dandie dinmont, dandie dinmont terrier', 'miniature pinscher', 'bernese mountain dog', 'boston bull, boston terrier', 'borzoi, russian wolfhound', 'whippet', 'bloodhound', 'airedale, airedale terrier', 'bearded collie', 'basset hound', 'brittany', 'dogue de bordeaux', 'norwegian elkhound', 'pembroke welsh corgi', 'irish wolfhound', 'deerhound', 'shih-tzu', 'doberman, doberman pinscher', 'silky terrier, sydney silky', 'cane corso', 'komondor', 'german shepherd dog', 'australian shepherd', 'eskimo dog, husky', 'samoyed, samoyede', 'manchester terrier', 'blenheim spaniel', 'belgian sheepdog', 'beagle', 'standard schnauzer, schnauzer', 'irish setter, red setter', 'bull mastiff', 'ibizan hound', 'rottweiler', 'staffordshire bullterrier, staffordshire bull terrier', 'old english sheepdog, bobtail', 'corgi', 'vizsla', 'australian cattle dog', 'newfoundland', 'xoloitzcuintli', 'rhodesian ridgeback', 'german pinscher', 'saluki, gazelle hound', 'chow, chow chow', 'siberian husky', 'chinese shar-pei', 'shetland sheepdog', 'boston terrier', 'bluetick coonhound', 'english toy spaniel', 'groenendael', 'irish red and white setter', 'otterhound', 'kelpie', 'briard', 'pomeranian', 'mexican hairless', 'dalmatian', 'field spaniel', 'scottish deerhound, deerhound', 'dalmatian, coach dog, carriage dog', 'border terrier', 'airedale terrier', 'appenzeller', 'old english sheepdog', 'french bulldog', 'portuguese water dog', 'poodle', 'greater swiss mountain dog', 'bull terrier', 'ibizan hound, ibizan podenco', 'affenpinscher, monkey pinscher, monkey dog', 'chinese crested', 'gordon setter', 'australian terrier', 'english cocker spaniel', 'schipperke'}
+
+     MATCH:
+
+          Cairn_Terrier_01.jpg: 
+Real:              cairn terrier   Classifier:           cairn, cairn terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Wolf_01.jpg: 
+Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, canis lupus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Mug_01.jpg: 
+Real:                        mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+          Cairn_Terrier_02.jpg: 
+Real:              cairn terrier   Classifier:            miniature schnauzer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+Printing results...
+
+Model architecture:  vgg
+
+Statistics results: 
+  Number of images :  4
+  Number of dog images :  2
+  Number of NON-dog images :  2
+  Number of matches between pet & classifier labels :  3
+  Number of correctly classified dog images :  2
+  Number of correctly classified NON-dog images :  2
+  Number of correctly classified dog breeds :  1
+  Percentage of correct matches :  75.0
+  Percentage of correctly classified dogs :  100.0
+  Percentage of correctly classified dog breeds :  50.0
+  Percentage of correctly classified NON-dogs :  100.0
+
+Incorrect dog classified: 
+
+Incorrect breed classified: 
+  Cairn_Terrier_02.jpg
+
+** Total Elapsed Runtime: 0:0:1
