@@ -13,25 +13,6 @@ Below are 4 of them:
      MATCH:
 
           Cairn_Terrier_01.jpg: 
-Real:              cairn terrier   Classifier:           cairn, cairn terrier
-
-                   Wolf_01.jpg: 
-Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, canis lupus
-
-                    Mug_01.jpg: 
-Real:                        mug   Classifier:                     coffee mug
-
- NOT A MATCH:
-
-          Cairn_Terrier_02.jpg: 
-Real:              cairn terrier   Classifier:                       shih-tzu
-
-# Total Images 4 # Matches: 3 # NOT Matches: 1
-{'schnauzer', 'black-and-tan coonhound', 'border terrier', 'norwich terrier', 'shih-tzu', 'black russian terrier', 'canaan dog', 'miniature poodle', 'shetland sheepdog, shetland sheep dog, shetland', 'rhodesian ridgeback', 'doberman, doberman pinscher', 'italian greyhound', 'entlebucher mountain dog', 'german shorthaired pointer', 'flat-coated retriever', 'walker hound', 'alaskan malamute', 'norwegian lundehund', 'belgian tervuren', 'borzoi', 'wire-haired fox terrier', 'irish terrier', 'sealyham terrier', 'bernese mountain dog', 'yorkshire terrier', 'ibizan hound', 'dalmatian, coach dog, carriage dog', 'akita', 'sussex spaniel', 'standard poodle, poodle', 'australian shepherd', 'belgian malinois', 'cane corso', 'giant schnauzer', 'basenji', 'great pyrenees', 'vizsla, hungarian pointer', 'corgi', 'havanese', 'icelandic sheepdog', 'briard', 'brussels griffon', 'greyhound', 'lowchen', 'smooth fox terrier', 'whippet', 'sealyham terrier, sealyham', 'golden retriever', 'irish red and white setter', 'schipperke', 'miniature schnauzer', 'airedale terrier', 'samoyed', 'afghan hound, afghan', 'walker hound, walker foxhound', 'gordon setter', 'bullmastiff', 'greater swiss mountain dog', 'saluki', 'blenheim spaniel', 'basset, basset hound', 'irish setter, red setter', 'doberman pinscher', 'kuvasz', 'affenpinscher', 'black and tan coonhound', 'entlebucher', 'affenpinscher, monkey pinscher, monkey dog', 'clumber, clumber spaniel', 'english springer, english springer spaniel', 'pug', 'cairn, cairn terrier', 'kerry blue terrier', 'dalmatian', 'irish setter', 'chow, chow chow', 'irish water spaniel', 'norwegian buhund', 'samoyed, samoyede', 'pharaoh hound', 'boston bull, boston terrier', 'belgian sheepdog', 'bearded collie', 'bluetick coonhound', 'german wirehaired pointer', 'beauceron', 'portuguese water dog', 'bluetick', 'beagle', 'saint bernard, st bernard', 'dachshund', 'japanese spaniel', 'tibetan terrier', 'newfoundland', 'cavalier king charles spaniel', 'mastiff', 'american eskimo dog', 'cardigan welsh corgi', 'lhasa apso', 'dogue de bordeaux', 'brittany spaniel', 'pembroke welsh corgi', 'saint bernard', 'scottish deerhound, deerhound', 'malinois', 'bouvier des flandres, bouviers des flandres', 'dandie dinmont terrier', 'miniature pinscher', 'standard schnauzer, schnauzer', 'leonberg', 'nova scotia duck tolling retriever', 'finnish spitz', 'redbone', 'cocker spaniel, english cocker spaniel, cocker', 'siberian husky', 'american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier', 'german shepherd, german shepherd dog, german police dog, alsatian', 'eskimo dog, husky', 'tibetan mastiff', 'bichon frise', 'english toy spaniel', 'german pinscher', 'pointer', 'poodle', 'german shepherd dog', 'rottweiler', 'lakeland terrier', 'chihuahua', 'english springer spaniel', 'border collie', 'deerhound', 'dog', 'labrador retriever', 'saluki, gazelle hound', 'chesapeake bay retriever', 'old english sheepdog', 'american staffordshire terrier', 'lhasa, lhasa apso', 'groenendael', 'pekingese', 'australian cattle dog', 'keeshond', 'newfoundland, newfoundland dog', 'manchester terrier', 'english setter', 'wirehaired pointing griffon', 'staffordshire bull terrier', 'bull mastiff', 'appenzeller', 'boston terrier', 'boxer', 'dandie dinmont, dandie dinmont terrier', 'basset hound', 'soft-coated wheaten terrier', 'petit basset griffon vendeen', 'airedale, airedale terrier', 'norfolk terrier', 'cairn terrier', 'komondor', 'plott', 'brittany', 'bouvier des flandres', 'curly-coated retriever', 'maltese dog, maltese terrier, maltese', 'pomeranian', 'maltese', 'chinese crested', 'otterhound, otter hound', 'cocker spaniel', 'norwegian elkhound', 'french bulldog', 'malamute, malemute, alaskan malamute', 'weimaraner', 'neapolitan mastiff', 'toy poodle', 'mexican hairless', 'bedlington terrier', 'field spaniel', 'pug, pug-dog', 'staffordshire bullterrier, staffordshire bull terrier', 'bulldog', 'toy terrier', 'collie', 'kelpie', 'norwegian elkhound, elkhound', 'boykin spaniel', 'scotch terrier, scottish terrier, scottie', 'anatolian shepherd dog', 'pekinese, pekingese, peke', 'american foxhound', 'shetland sheepdog', 'parson russell terrier', 'australian terrier', 'american water spaniel', 'welsh springer spaniel', 'silky terrier', 'bloodhound', 'chow chow', 'old english sheepdog, bobtail', 'xoloitzcuintli', 'irish wolfhound', 'bloodhound, sleuthhound', 'borzoi, russian wolfhound', 'ibizan hound, ibizan podenco', 'pembroke, pembroke welsh corgi, corgi', 'japanese chin', 'otterhound', 'great dane', 'silky terrier, sydney silky', 'chinese shar-pei', 'bull terrier', 'clumber spaniel', 'vizsla', 'english foxhound', 'glen of imaal terrier', 'papillon', 'english cocker spaniel', 'leonberger', 'brabancon griffon', 'west highland white terrier', 'afghan hound', 'scottish terrier', 'tibetan terrier, chrysanthemum dog', 'cardigan, cardigan welsh corgi, corgi'}
-
-     MATCH:
-
-          Cairn_Terrier_01.jpg: 
 Real:              cairn terrier   Classifier:           cairn, cairn terrier  
 PetLabelDog: 1  ClassLabelDog: 1
 
@@ -51,13 +32,6 @@ PetLabelDog: 1  ClassLabelDog: 1
 
 # Total Images 4 # Matches: 3 # NOT Matches: 1
 
- ** Statistics from calculates_results_stats() function:
-N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
-
- ** Check Statistics - calculated from this function as a check:
-N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
 Printing results...
 
 Model architecture:  resnet

@@ -4,144 +4,12 @@ Command Line Arguments:
  dogfile = dognames.txt
 
 Pet Image Label Dictionary has 40 key-value pairs.
-Below are 10 of them:
+Below are 5 of them:
  1 key:       Cocker_spaniel_03750.jpg  label:             cocker spaniel
  2 key:                   gecko_80.jpg  label:                      gecko
  3 key:               Poodle_07927.jpg  label:                     poodle
  4 key:         Basset_hound_01034.jpg  label:               basset hound
  5 key:       Great_pyrenees_05435.jpg  label:             great pyrenees
- 6 key:               Beagle_01141.jpg  label:                     beagle
- 7 key:                   gecko_02.jpg  label:                      gecko
- 8 key:       Great_pyrenees_05367.jpg  label:             great pyrenees
- 9 key:               Poodle_07956.jpg  label:                     poodle
-10 key:            fox_squirrel_01.jpg  label:               fox squirrel
-
-     MATCH:
-
-      Cocker_spaniel_03750.jpg: 
-Real:             cocker spaniel   Classifier: cocker spaniel, english cocker spaniel, cocker
-
-              Poodle_07927.jpg: 
-Real:                     poodle   Classifier:        standard poodle, poodle
-
-        Basset_hound_01034.jpg: 
-Real:               basset hound   Classifier:           basset, basset hound
-
-      Great_pyrenees_05435.jpg: 
-Real:             great pyrenees   Classifier:                 great pyrenees
-
-              Poodle_07956.jpg: 
-Real:                     poodle   Classifier:        standard poodle, poodle
-
-           fox_squirrel_01.jpg: 
-Real:               fox squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger
-
-          Great_dane_05320.jpg: 
-Real:                 great dane   Classifier:                     great dane
-
- German_shepherd_dog_04931.jpg: 
-Real:        german shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
-
- Miniature_schnauzer_06884.jpg: 
-Real:        miniature schnauzer   Classifier:            miniature schnauzer
-
-German_shorthaired_pointer_04986.jpg: 
-Real: german shorthaired pointer   Classifier:     german shorthaired pointer
-
-                    cat_02.jpg: 
-Real:                        cat   Classifier:                 tiger cat, cat
-
-                    cat_07.jpg: 
-Real:                        cat   Classifier:              egyptian cat, cat
-
-           Dalmatian_04017.jpg: 
-Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog
-
-               Boxer_02426.jpg: 
-Real:                      boxer   Classifier:                          boxer
-
-                 skunk_029.jpg: 
-Real:                      skunk   Classifier:     skunk, polecat, wood pussy
-
-      Boston_terrier_02259.jpg: 
-Real:             boston terrier   Classifier:    boston bull, boston terrier
-
-                Rabbit_002.jpg: 
-Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
-
-    Golden_retriever_05195.jpg: 
-Real:           golden retriever   Classifier:               golden retriever
-
-           Dalmatian_04068.jpg: 
-Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog
-
-             Basenji_00963.jpg: 
-Real:                    basenji   Classifier:                        basenji
-
-             polar_bear_04.jpg: 
-Real:                 polar bear   Classifier: ice bear, polar bear, ursus maritimus, thalarctos maritimus
-
-    Golden_retriever_05223.jpg: 
-Real:           golden retriever   Classifier:               golden retriever
-
-      Boston_terrier_02303.jpg: 
-Real:             boston terrier   Classifier:    boston bull, boston terrier
-
-              Collie_03797.jpg: 
-Real:                     collie   Classifier:                         collie
-
- German_shepherd_dog_04890.jpg: 
-Real:        german shepherd dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
-
-           Dalmatian_04037.jpg: 
-Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog
-
-       Saint_bernard_08036.jpg: 
-Real:              saint bernard   Classifier:      saint bernard, st bernard
-
-       Saint_bernard_08010.jpg: 
-Real:              saint bernard   Classifier:      saint bernard, st bernard
-
-              Beagle_01125.jpg: 
-Real:                     beagle   Classifier:                         beagle
-
-             Basenji_00974.jpg: 
-Real:                    basenji   Classifier:                        basenji
-
- NOT A MATCH:
-
-                  gecko_80.jpg: 
-Real:                      gecko   Classifier:           tree frog, tree-frog
-
-              Beagle_01141.jpg: 
-Real:                     beagle   Classifier:               english foxhound
-
-                  gecko_02.jpg: 
-Real:                      gecko   Classifier:               alligator lizard
-
-      Great_pyrenees_05367.jpg: 
-Real:             great pyrenees   Classifier:                         kuvasz
-
-       great_horned_owl_02.jpg: 
-Real:           great horned owl   Classifier: ruffed grouse, partridge, bonasa umbellus
-
-      Boston_terrier_02285.jpg: 
-Real:             boston terrier   Classifier:                        basenji
-
-    Golden_retriever_05257.jpg: 
-Real:           golden retriever   Classifier:           afghan hound, afghan
-
-    Golden_retriever_05182.jpg: 
-Real:           golden retriever   Classifier:                tibetan mastiff
-
-              Beagle_01170.jpg: 
-Real:                     beagle   Classifier:  walker hound, walker foxhound
-
-                    cat_01.jpg: 
-Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus
-
-# Total Images 40 # Matches: 30 # NOT Matches: 10
-{'schipperke', 'belgian malinois', 'silky terrier, sydney silky', 'german wirehaired pointer', 'australian cattle dog', 'sealyham terrier', 'bullmastiff', 'boston terrier', 'boxer', 'pembroke, pembroke welsh corgi, corgi', 'keeshond', 'wirehaired pointing griffon', 'redbone', 'brittany', 'cairn terrier', 'cardigan, cardigan welsh corgi, corgi', 'cardigan welsh corgi', 'chinese shar-pei', 'glen of imaal terrier', 'dog', 'field spaniel', 'pekinese, pekingese, peke', 'blenheim spaniel', 'flat-coated retriever', 'american foxhound', 'otterhound, otter hound', 'norwegian elkhound, elkhound', 'borzoi', 'giant schnauzer', 'cane corso', 'doberman pinscher', 'pembroke welsh corgi', 'newfoundland, newfoundland dog', 'shetland sheepdog, shetland sheep dog, shetland', 'english springer spaniel', 'norwich terrier', 'norwegian buhund', 'labrador retriever', 'wire-haired fox terrier', 'great dane', 'shih-tzu', 'lakeland terrier', 'irish terrier', 'english cocker spaniel', 'ibizan hound, ibizan podenco', 'standard schnauzer, schnauzer', 'irish water spaniel', 'bloodhound, sleuthhound', 'bouvier des flandres', 'rhodesian ridgeback', 'schnauzer', 'lhasa apso', 'miniature poodle', 'english setter', 'brittany spaniel', 'english springer, english springer spaniel', 'doberman, doberman pinscher', 'airedale terrier', 'leonberg', 'airedale, airedale terrier', 'toy terrier', 'eskimo dog, husky', 'malinois', 'japanese spaniel', 'standard poodle, poodle', 'weimaraner', 'american staffordshire terrier', 'tibetan mastiff', 'border terrier', 'neapolitan mastiff', 'whippet', 'english foxhound', 'leonberger', 'petit basset griffon vendeen', 'pharaoh hound', 'staffordshire bull terrier', 'bull terrier', 'samoyed, samoyede', 'french bulldog', 'english toy spaniel', 'yorkshire terrier', 'silky terrier', 'maltese dog, maltese terrier, maltese', 'soft-coated wheaten terrier', 'curly-coated retriever', 'greyhound', 'pug', 'irish setter', 'irish red and white setter', 'xoloitzcuintli', 'tibetan terrier, chrysanthemum dog', 'irish setter, red setter', 'vizsla, hungarian pointer', 'bluetick coonhound', 'kerry blue terrier', 'siberian husky', 'german shepherd, german shepherd dog, german police dog, alsatian', 'affenpinscher, monkey pinscher, monkey dog', 'basenji', 'lowchen', 'beagle', 'belgian sheepdog', 'chinese crested', 'dachshund', 'corgi', 'dogue de bordeaux', 'west highland white terrier', 'poodle', 'samoyed', 'saint bernard, st bernard', 'mastiff', 'maltese', 'akita', 'basset, basset hound', 'dalmatian, coach dog, carriage dog', 'bouvier des flandres, bouviers des flandres', 'bearded collie', 'american eskimo dog', 'entlebucher mountain dog', 'ibizan hound', 'tibetan terrier', 'miniature pinscher', 'groenendael', 'chow, chow chow', 'plott', 'scottish terrier', 'icelandic sheepdog', 'finnish spitz', 'appenzeller', 'alaskan malamute', 'german shepherd dog', 'canaan dog', 'scotch terrier, scottish terrier, scottie', 'rottweiler', 'portuguese water dog', 'golden retriever', 'vizsla', 'komondor', 'walker hound, walker foxhound', 'mexican hairless', 'borzoi, russian wolfhound', 'old english sheepdog, bobtail', 'bedlington terrier', 'affenpinscher', 'pomeranian', 'dandie dinmont terrier', 'japanese chin', 'cairn, cairn terrier', 'old english sheepdog', 'saluki', 'boston bull, boston terrier', 'bluetick', 'pointer', 'american water spaniel', 'scottish deerhound, deerhound', 'german pinscher', 'chihuahua', 'kuvasz', 'miniature schnauzer', 'lhasa, lhasa apso', 'beauceron', 'bloodhound', 'boykin spaniel', 'norwegian lundehund', 'border collie', 'afghan hound, afghan', 'norfolk terrier', 'brabancon griffon', 'norwegian elkhound', 'american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier', 'black-and-tan coonhound', 'brussels griffon', 'cocker spaniel', 'deerhound', 'parson russell terrier', 'anatolian shepherd dog', 'dandie dinmont, dandie dinmont terrier', 'chesapeake bay retriever', 'collie', 'bulldog', 'irish wolfhound', 'australian shepherd', 'sealyham terrier, sealyham', 'german shorthaired pointer', 'toy poodle', 'chow chow', 'great pyrenees', 'walker hound', 'papillon', 'nova scotia duck tolling retriever', 'saluki, gazelle hound', 'afghan hound', 'staffordshire bullterrier, staffordshire bull terrier', 'clumber, clumber spaniel', 'havanese', 'entlebucher', 'saint bernard', 'smooth fox terrier', 'malamute, malemute, alaskan malamute', 'gordon setter', 'shetland sheepdog', 'basset hound', 'pekingese', 'manchester terrier', 'kelpie', 'newfoundland', 'otterhound', 'welsh springer spaniel', 'cavalier king charles spaniel', 'bull mastiff', 'bichon frise', 'italian greyhound', 'clumber spaniel', 'dalmatian', 'australian terrier', 'bernese mountain dog', 'greater swiss mountain dog', 'sussex spaniel', 'black russian terrier', 'briard', 'cocker spaniel, english cocker spaniel, cocker', 'belgian tervuren', 'black and tan coonhound', 'pug, pug-dog'}
 
      MATCH:
 
@@ -309,13 +177,6 @@ PetLabelDog: 0  ClassLabelDog: 0
 
 # Total Images 40 # Matches: 30 # NOT Matches: 10
 
- ** Statistics from calculates_results_stats() function:
-N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
-
- ** Check Statistics - calculated from this function as a check:
-N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 Printing results...
 
 Model architecture:  alexnet
@@ -336,29 +197,11 @@ Statistics results:
 Incorrect dog classified: 
 
 Incorrect breed classified: 
-  Cocker_spaniel_03750.jpg
-  Poodle_07927.jpg
-  Basset_hound_01034.jpg
-  Great_pyrenees_05435.jpg
-  Poodle_07956.jpg
-  Great_dane_05320.jpg
-  German_shepherd_dog_04931.jpg
-  Miniature_schnauzer_06884.jpg
-  German_shorthaired_pointer_04986.jpg
-  Dalmatian_04017.jpg
-  Boxer_02426.jpg
-  Boston_terrier_02259.jpg
-  Golden_retriever_05195.jpg
-  Dalmatian_04068.jpg
-  Basenji_00963.jpg
-  Golden_retriever_05223.jpg
-  Boston_terrier_02303.jpg
-  Collie_03797.jpg
-  German_shepherd_dog_04890.jpg
-  Dalmatian_04037.jpg
-  Saint_bernard_08036.jpg
-  Saint_bernard_08010.jpg
-  Beagle_01125.jpg
-  Basenji_00974.jpg
+  Beagle_01141.jpg
+  Great_pyrenees_05367.jpg
+  Boston_terrier_02285.jpg
+  Golden_retriever_05257.jpg
+  Golden_retriever_05182.jpg
+  Beagle_01170.jpg
 
 ** Total Elapsed Runtime: 0:0:1

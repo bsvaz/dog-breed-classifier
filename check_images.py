@@ -45,35 +45,24 @@ def main():
     check_creating_pet_image_labels(results)
 
     # Function that classify the images and update Results Dictionary with those
-    print('INICIO CLASSIFY_IMAGES')
     classify_images(in_arg.dir, results, in_arg.arch)
-    print('FIM CLASSIFY_IMAGES')
-    # Function that checks Results Dictionary using results    
-    print('INICIO CHECK_CLASSIFY_IMAGES')
-    check_classifying_images(results)    
-    print('FIM CHECK_CLASSIFY_IMAGES')
+
     # Adjusts the results dictionary to determine if classifier correctly 
     # classified images 'as a dog' or 'not a dog' 
-    print('INICIO ADJUST_RESULTS')
     adjust_results4_isadog(results, in_arg.dogfile)
-    print('FIM ADJUST_RESULTS')
+
     # Function that checks Results Dictionary for is-a-dog adjustment using 
     # results
-    print('INICIO CHECK_CLASSIFYING_LABELS_AS_DOGS')
     check_classifying_labels_as_dogs(results)
-    print('FIM CHECK_CLASSIFYING_LABELS_AS_DOGS')
+
     # Calculates statistics of the results
-    print('INICIO CALCULATES_RESULTS_STATS')
     results_stats = calculates_results_stats(results)
-    print('FIM CALCULATES_RESULTS_STATS')
-    # Function that checks Results Statistics Dictionary using results_stats
-    print('INICIO CHECK_CALCULATING_RESULTS')
-    check_calculating_results(results, results_stats)
-    print('FIM CHECK_CALCULATING_RESULTS')
+
+    print() # Only to jump a line
+
     # Print the results
-    print('INICIO PRINT_RESULTS')
     print_results(results, results_stats, in_arg.arch, True, True)
-    print('FIM PRINT_RESULTS')
+
     # Measure total program runtime by collecting end time
     end_time = time()
     

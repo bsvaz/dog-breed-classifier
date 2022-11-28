@@ -40,7 +40,7 @@ def adjust_results4_isadog(results_dic, dogfile):
         dog_breeds = set()
         for line in dogfile:
             dog_breeds.add(line.rstrip())
-        print(dog_breeds)
+        
     for value in results_dic.values():
 
         if value[0] in dog_breeds:
