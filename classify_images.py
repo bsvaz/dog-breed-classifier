@@ -8,7 +8,6 @@
 
 # Imports classifier function for using CNN to classify images 
 from classifier import classifier 
-from os import listdir
  
 def classify_images(images_dir, results_dic, model):
     """
@@ -43,10 +42,10 @@ def classify_images(images_dir, results_dic, model):
            None - results_dic is mutable data type so no return needed.         
     """
 
-    for filename in listdir(images_dir):
+    for filename in results_dic:
         
         classifier_label = classifier(images_dir + filename, model)
-        formatted_classifier_label = classifier_label.lower()
+        formatted_classifier_label = classifier_label.lower().strip()
         
         if results_dic[filename][0] in formatted_classifier_label:
             result = 1

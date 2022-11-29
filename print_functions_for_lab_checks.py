@@ -54,8 +54,8 @@ def check_creating_pet_image_labels(results_dic):
         # Code to print 10 key-value pairs (or fewer if less than 10 images)
         # & makes sure there are 40 pairs, one for each file in pet_images/
         stop_point = len(results_dic)
-        if stop_point > 5:
-            stop_point = 5
+        if stop_point > 10:
+            stop_point = 10
         print("\nPet Image Label Dictionary has", len(results_dic),
               "key-value pairs.\nBelow are", stop_point, "of them:")
     
@@ -93,7 +93,6 @@ def check_classifying_images(results_dic):
                     classifer labels and 0 = no match between labels
     Returns:
      Nothing - just prints to console  
-
     """
     if results_dic is None:
         print("* Doesn't Check the Results Dictionary because 'classify_images' hasn't been defined.")
@@ -158,7 +157,6 @@ def check_classifying_labels_as_dogs(results_dic):
                             'as-NOT-a' dog.
     Returns:
      Nothing - just prints to console  
-
     """
     if results_dic is None:
         print("* Doesn't Check the Results Dictionary because 'adjust_results4_isadog' hasn't been defined.")
@@ -231,7 +229,6 @@ def check_calculating_results(results_dic, results_stats_dic):
                      and the value is the statistic's value 
     Returns:
      Nothing - just prints to console  
-
     """
     if results_stats_dic is None:
         print("* Doesn't Check the Results Dictionary because 'calculates_results_stats' hasn't been defined.")

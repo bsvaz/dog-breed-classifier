@@ -4,12 +4,17 @@ Command Line Arguments:
  dogfile = dognames.txt
 
 Pet Image Label Dictionary has 40 key-value pairs.
-Below are 5 of them:
+Below are 10 of them:
  1 key:       Cocker_spaniel_03750.jpg  label:             cocker spaniel
  2 key:                   gecko_80.jpg  label:                      gecko
  3 key:               Poodle_07927.jpg  label:                     poodle
  4 key:         Basset_hound_01034.jpg  label:               basset hound
  5 key:       Great_pyrenees_05435.jpg  label:             great pyrenees
+ 6 key:               Beagle_01141.jpg  label:                     beagle
+ 7 key:                   gecko_02.jpg  label:                      gecko
+ 8 key:       Great_pyrenees_05367.jpg  label:             great pyrenees
+ 9 key:               Poodle_07956.jpg  label:                     poodle
+10 key:            fox_squirrel_01.jpg  label:               fox squirrel
 
      MATCH:
 
@@ -136,7 +141,7 @@ PetLabelDog: 1  ClassLabelDog: 1
  NOT A MATCH:
 
                   gecko_80.jpg: 
-Real:                      gecko   Classifier:           tree frog, tree-frog  
+Real:                      gecko   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui  
 PetLabelDog: 0  ClassLabelDog: 0
 
               Beagle_01141.jpg: 

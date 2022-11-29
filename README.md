@@ -3,6 +3,8 @@
 ## Installation
 
 You can run this code on a environment with python3.9 and torchvision installed.
+To install torchvision use:
+`pip install torchvision`
 
 ## Project Motivation
 
@@ -12,10 +14,16 @@ The project uses CNN pre-trained image classifiers that was trained using ImageN
 ## How to use this code
 
 To run this code open a terminal in this folder and run the code:
+
 `python check_images.py --dir <directory with images> --arch <model> --dogfile <file that contains dognames>`
 
-To produce .txt files for each CNN Architectures like the "alexnet_pet-images.txt" run `sh run_models_batch.sh` for images on pet_images folder or `sh run_models_batch_uploaded.sh`
+To produce .txt files for each CNN Architectures like the "alexnet_pet-images.txt" run
+`sh run_models_batch.sh`
+for images on pet_images folder, or
+`sh run_models_batch_uploaded.sh`
 
 ## Run your own images
 
-To run your own images, upload them on the uploaded_images folder with names in the format "Dog_Breed_#.jpg", "Animal_Name_#.jpg" or "Object_Name_#.jpg" and run `sh run_models_batch_uploaded.sh` as above.
+To run your own images, upload them on the uploaded*images folder with names in the format "Dog_Breed*#.jpg", "Animal*Name*#.jpg" or "Object*Name*#.jpg", where "#" is a number, and run
+`sh run_models_batch_uploaded.sh`
+as above.
