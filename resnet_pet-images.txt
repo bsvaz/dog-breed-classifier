@@ -207,4 +207,4 @@ Incorrect breed classified:
   Golden_retriever_05182.jpg
   Beagle_01170.jpg
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:1
