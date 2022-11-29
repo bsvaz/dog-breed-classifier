@@ -24,6 +24,6 @@ for images on pet_images folder, or
 
 ## Run your own images
 
-To run your own images, upload them on the uploaded*images folder with names in the format "Dog_Breed*#.jpg", "Animal*Name*#.jpg" or "Object*Name*#.jpg", where "#" is a number, and run
+To run your own images, upload them on the uploaded*images folder with names in the format "Dog_Breed_#.jpg", "Animal_Name_#.jpg" or "Object_Name_#.jpg", where "#" is a number, and run
 `sh run_models_batch_uploaded.sh`
 as above.
