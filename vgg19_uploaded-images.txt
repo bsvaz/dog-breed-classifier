@@ -1,6 +1,6 @@
 Command Line Arguments:
      dir = ./dog-breed-classifier-2/uploaded_images/ 
-    arch = alexnet 
+    arch = vgg19 
  dogfile = ./dog-breed-classifier-2/dognames.txt
 
 Pet Image Label Dictionary has 4 key-value pairs.
@@ -18,42 +18,41 @@ GPU is not available. Used CPU.
 Real:              cairn terrier   Classifier:           cairn, cairn terrier  
 PetLabelDog: 1  ClassLabelDog: 1
 
+          Cairn_Terrier_02.jpg: 
+Real:              cairn terrier   Classifier:           cairn, cairn terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Mug_01.jpg: 
+Real:                        mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
                    Wolf_01.jpg: 
 Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, canis lupus  
 PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
-          Cairn_Terrier_02.jpg: 
-Real:              cairn terrier   Classifier: cocker spaniel, english cocker spaniel, cocker  
-PetLabelDog: 1  ClassLabelDog: 1
-
-                    Mug_01.jpg: 
-Real:                        mug   Classifier:                            cup  
-PetLabelDog: 0  ClassLabelDog: 0
-
-# Total Images 4 # Matches: 2 # NOT Matches: 2
+# Total Images 4 # Matches: 4 # NOT Matches: 0
 
 Printing results...
 
-Model architecture:  alexnet
+Model architecture:  vgg19
 
 Statistics results: 
   Number of images :  4
   Number of dog images :  2
   Number of NON-dog images :  2
-  Number of matches between pet & classifier labels :  2
+  Number of matches between pet & classifier labels :  4
   Number of correctly classified dog images :  2
   Number of correctly classified NON-dog images :  2
-  Number of correctly classified dog breeds :  1
-  Percentage of correct matches :  50.0
+  Number of correctly classified dog breeds :  2
+  Percentage of correct matches :  100.0
   Percentage of correctly classified dogs :  100.0
-  Percentage of correctly classified dog breeds :  50.0
+  Percentage of correctly classified dog breeds :  100.0
   Percentage of correctly classified NON-dogs :  100.0
 
 Incorrect dog classified: 
 
 Incorrect breed classified: 
-  Cairn_Terrier_02.jpg
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:11

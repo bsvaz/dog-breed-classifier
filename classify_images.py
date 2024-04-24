@@ -9,7 +9,7 @@
 # Imports classifier function for using CNN to classify images 
 from classifier import classifier 
  
-def classify_images(images_dir, results_dic, model):
+def classify_images(images_dir, results_dic, model, device):
     """
     Creates classifier labels with classifier function, compares pet labels to 
     the classifier labels, and adds the classifier label and the comparison of 
@@ -44,7 +44,7 @@ def classify_images(images_dir, results_dic, model):
 
     for filename in results_dic:
         
-        classifier_label = classifier(images_dir + filename, model)
+        classifier_label = classifier(images_dir + filename, model, device)
         formatted_classifier_label = classifier_label.lower().strip()
         
         if results_dic[filename][0] in formatted_classifier_label:
@@ -53,5 +53,3 @@ def classify_images(images_dir, results_dic, model):
             result = 0
         
         results_dic[filename].extend([formatted_classifier_label, result])
-
-    

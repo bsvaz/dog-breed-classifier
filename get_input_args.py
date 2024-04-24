@@ -27,11 +27,11 @@ def get_input_args():
     """
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--dir', action='store', dest='dir', default='pet_images/',
+    parser.add_argument('--dir', action='store', dest='dir', default='./dog-breed-classifier/pet_images/',
                         required=False, help='Image Folder')
-    parser.add_argument('--arch', action='store', dest='arch', default='vgg',
+    parser.add_argument('--arch', action='store', dest='arch', default='resnet50',
                         required=False, help='CNN Model Architecture')
-    parser.add_argument('--dogfile', action='store', dest='dogfile', default='dognames.txt',
+    parser.add_argument('--dogfile', action='store', dest='dogfile', default='./dog-breed-classifier/dognames.txt',
                         required=False, help='Text File with Dog Names')    
 
     return parser.parse_args()

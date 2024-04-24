@@ -1,6 +1,6 @@
 Command Line Arguments:
      dir = ./dog-breed-classifier-2/pet_images/ 
-    arch = alexnet 
+    arch = vgg19 
  dogfile = ./dog-breed-classifier-2/dognames.txt
 
 Pet Image Label Dictionary has 40 key-value pairs.
@@ -36,7 +36,19 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:                     beagle   Classifier:                         beagle  
 PetLabelDog: 1  ClassLabelDog: 1
 
+              Beagle_01141.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              Beagle_01170.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
       Boston_terrier_02259.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+      Boston_terrier_02285.jpg: 
 Real:             boston terrier   Classifier:    boston bull, boston terrier  
 PetLabelDog: 1  ClassLabelDog: 1
 
@@ -80,11 +92,19 @@ German_shorthaired_pointer_04986.jpg:
 Real: german shorthaired pointer   Classifier:     german shorthaired pointer  
 PetLabelDog: 1  ClassLabelDog: 1
 
+    Golden_retriever_05182.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
     Golden_retriever_05195.jpg: 
 Real:           golden retriever   Classifier:               golden retriever  
 PetLabelDog: 1  ClassLabelDog: 1
 
     Golden_retriever_05223.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+    Golden_retriever_05257.jpg: 
 Real:           golden retriever   Classifier:               golden retriever  
 PetLabelDog: 1  ClassLabelDog: 1
 
@@ -121,7 +141,7 @@ Real:              saint bernard   Classifier:      saint bernard, st bernard
 PetLabelDog: 1  ClassLabelDog: 1
 
                     cat_02.jpg: 
-Real:                        cat   Classifier:                 tiger cat, cat  
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
 PetLabelDog: 0  ClassLabelDog: 0
 
                     cat_07.jpg: 
@@ -130,6 +150,10 @@ PetLabelDog: 0  ClassLabelDog: 0
 
            fox_squirrel_01.jpg: 
 Real:               fox squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                  gecko_02.jpg: 
+Real:                      gecko   Classifier:            banded gecko, gecko  
 PetLabelDog: 0  ClassLabelDog: 0
 
              polar_bear_04.jpg: 
@@ -142,36 +166,12 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
-              Beagle_01141.jpg: 
-Real:                     beagle   Classifier:               english foxhound  
-PetLabelDog: 1  ClassLabelDog: 1
-
-              Beagle_01170.jpg: 
-Real:                     beagle   Classifier:  walker hound, walker foxhound  
-PetLabelDog: 1  ClassLabelDog: 1
-
-      Boston_terrier_02285.jpg: 
-Real:             boston terrier   Classifier:                        basenji  
-PetLabelDog: 1  ClassLabelDog: 1
-
-    Golden_retriever_05182.jpg: 
-Real:           golden retriever   Classifier:                tibetan mastiff  
-PetLabelDog: 1  ClassLabelDog: 1
-
-    Golden_retriever_05257.jpg: 
-Real:           golden retriever   Classifier:           afghan hound, afghan  
-PetLabelDog: 1  ClassLabelDog: 1
-
       Great_pyrenees_05367.jpg: 
 Real:             great pyrenees   Classifier:                         kuvasz  
 PetLabelDog: 1  ClassLabelDog: 1
 
                     cat_01.jpg: 
-Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus  
-PetLabelDog: 0  ClassLabelDog: 0
-
-                  gecko_02.jpg: 
-Real:                      gecko   Classifier:               alligator lizard  
+Real:                        cat   Classifier:        wallaby, brush kangaroo  
 PetLabelDog: 0  ClassLabelDog: 0
 
                   gecko_80.jpg: 
@@ -182,33 +182,28 @@ PetLabelDog: 0  ClassLabelDog: 0
 Real:           great horned owl   Classifier: ruffed grouse, partridge, bonasa umbellus  
 PetLabelDog: 0  ClassLabelDog: 0
 
-# Total Images 40 # Matches: 30 # NOT Matches: 10
+# Total Images 40 # Matches: 36 # NOT Matches: 4
 
 Printing results...
 
-Model architecture:  alexnet
+Model architecture:  vgg19
 
 Statistics results: 
   Number of images :  40
   Number of dog images :  30
   Number of NON-dog images :  10
-  Number of matches between pet & classifier labels :  30
+  Number of matches between pet & classifier labels :  36
   Number of correctly classified dog images :  30
   Number of correctly classified NON-dog images :  10
-  Number of correctly classified dog breeds :  24
-  Percentage of correct matches :  75.0
+  Number of correctly classified dog breeds :  29
+  Percentage of correct matches :  90.0
   Percentage of correctly classified dogs :  100.0
-  Percentage of correctly classified dog breeds :  80.0
+  Percentage of correctly classified dog breeds :  96.66666666666667
   Percentage of correctly classified NON-dogs :  100.0
 
 Incorrect dog classified: 
 
 Incorrect breed classified: 
-  Beagle_01141.jpg
-  Beagle_01170.jpg
-  Boston_terrier_02285.jpg
-  Golden_retriever_05182.jpg
-  Golden_retriever_05257.jpg
   Great_pyrenees_05367.jpg
 
-** Total Elapsed Runtime: 0:0:31
+** Total Elapsed Runtime: 0:1:41

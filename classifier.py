@@ -1,17 +1,20 @@
 # REVISED DATE: 04/23/2024
 # PROGRAMMER: Bruno Vaz
 
+import warnings
 import ast
 from PIL import Image
 import torch
 import torchvision.transforms as transforms
 import torchvision.models as models
 
+warnings.filterwarnings('ignore')
+
 with open('./dog-breed-classifier/imagenet1000_clsid_to_human.txt') as imagenet_classes_file:
     imagenet_classes_dict = ast.literal_eval(imagenet_classes_file.read())
 
 
-def classifier(img_path, model_version):
+def classifier(img_path, model_version, device):
 
     img_pil = Image.open(img_path)
 
@@ -32,13 +35,9 @@ def classifier(img_path, model_version):
     ])
     img_tensor = preprocess(img_pil).unsqueeze(0)
     
-    # Set GPU if available
-    if torch.cuda.is_available():
-        model.cuda()
-        img_tensor.cuda()
-    
-    else:
-        print('GPU not available. Using CPU')
+    # Set device, CPU or GPU
+    model.to(device)
+    img_tensor.to(device)
         
     # Inference
     model.eval()
@@ -49,5 +48,4 @@ def classifier(img_path, model_version):
     pred_idx = output.squeeze().argmax().item()
     predict_class = imagenet_classes_dict[pred_idx]
 
-    print(f'Predicted class: {predict_class}')
     return predict_class

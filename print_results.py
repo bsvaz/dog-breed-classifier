@@ -39,7 +39,7 @@ def print_results(results_dic, results_stats_dic, model,
     """    
     print('Printing results...')
     print()
-    print('Model architecture: ', model)
+    print(f'Model architecture: {model}')
     print()
     print('Statistics results: ')
     stats_dic_names = {'n_images' : 'Number of images', 'n_dogs_img' : 'Number of dog images',
@@ -54,7 +54,7 @@ def print_results(results_dic, results_stats_dic, model,
                         'pct_correct_notdogs' : 'Percentage of correctly classified NON-dogs'}\
 
     for key, value in results_stats_dic.items():
-        print(' ', stats_dic_names[key], ': ', value)
+        print(f' {stats_dic_names[key]} : {value}')
     
     if print_incorrect_dogs == True:
         incorrect_dogs_keys = [key for key, value in results_dic.items() if 
@@ -62,7 +62,7 @@ def print_results(results_dic, results_stats_dic, model,
         print()
         print('Incorrect dog classified: ')
         for item in incorrect_dogs_keys:
-            print(' ', item)
+            print(f' {item}')
 
     if print_incorrect_breed == True:
         incorrect_breed_keys = [key for key, value in results_dic.items() if 
@@ -70,4 +70,4 @@ def print_results(results_dic, results_stats_dic, model,
         print()
         print('Incorrect breed classified: ')
         for item in incorrect_breed_keys:
-            print(' ', item)
+            print(f' {item}')

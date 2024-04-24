@@ -9,6 +9,6 @@
 #
 # Usage: sh run_models_batch.sh    -- will run program from commandline within Project Workspace
 #  
-python check_images.py --dir pet_images/ --arch resnet  --dogfile dognames.txt > resnet_pet-images.txt
-python check_images.py --dir pet_images/ --arch alexnet --dogfile dognames.txt > alexnet_pet-images.txt
-python check_images.py --dir pet_images/ --arch vgg  --dogfile dognames.txt > vgg_pet-images.txt
+python ./dog-breed-classifier-2/check_images.py --dir ./dog-breed-classifier-2/pet_images/ --arch resnet50  --dogfile ./dog-breed-classifier-2/dognames.txt > ./dog-breed-classifier-2/resnet50_pet-images.txt
+python ./dog-breed-classifier-2/check_images.py --dir ./dog-breed-classifier-2/pet_images/ --arch alexnet --dogfile ./dog-breed-classifier-2/dognames.txt > ./dog-breed-classifier-2/alexnet_pet-images.txt
+python ./dog-breed-classifier-2/check_images.py --dir ./dog-breed-classifier-2/pet_images/ --arch vgg19  --dogfile ./dog-breed-classifier-2/dognames.txt > ./dog-breed-classifier-2/vgg19_pet-images.txt

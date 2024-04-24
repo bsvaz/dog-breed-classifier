@@ -1,29 +1,22 @@
-# Use a Pre-trained Image Classifier to Identify Dog Breeds
+# Dog Breed Classifier
 
-## Installation
+Welcome to the Dog Breed Classifier project! This application uses advanced machine learning techniques to identify the breed of dogs from images. Built with Python and leveraging PyTorch's powerful pre-trained models, this tool offers a fun and educational way to connect technology with our furry friends.
 
-You can run this code on a environment with python3.9 and torchvision installed.
-To install torchvision use:
-`pip install torchvision`
+## Project Overview
 
-## Project Motivation
+The Dog Breed Classifier is designed to utilize convolutional neural networks provided by PyTorch's torchvision library to accurately predict dog breeds from provided images. It integrates various models, such as AlexNet, VGG, and ResNet, which have been trained on extensive datasets to ensure high accuracy and performance.
 
-This project is part of the "AI Programming with Python Nanodegree" program of Udacity.
-The project uses CNN pre-trained image classifiers that was trained using ImageNet. The goal is to analyse the performance of different CNN Architectures classifying dog images.
+## Features
 
-## How to use this code
+- **Breed Identification**: Determines the breed of dogs in images with high accuracy.
+- **Support for Multiple Models**: Use different pre-trained neural network models for classification.
 
-To run this code open a terminal in this folder and run the code:
+## Files and Directories
 
-`python check_images.py --dir <directory with images> --arch <model> --dogfile <file that contains dognames>`
-
-To produce .txt files for each CNN Architectures like the "alexnet_pet-images.txt" run
-`sh run_models_batch.sh`
-for images on pet_images folder, or
-`sh run_models_batch_uploaded.sh`
-
-## Run your own images
-
-To run your own images, upload them on the uploaded*images folder with names in the format "Dog_Breed_#.jpg", "Animal_Name_#.jpg" or "Object_Name_#.jpg", where "#" is a number, and run
-`sh run_models_batch_uploaded.sh`
-as above.
+- `adjust_results4_isadog.py`: Adjusts the results dictionary to determine if classifier correctly 
+    classified images 'as a dog' or 'not a dog'.
+- `classifier.py`: Main script that handles the process of image classification.
+- `print_results.py`: Outputs the results of the classification in a human-readable format.
+- `pet_images/`: Directory containing sample images of pets.
+- `uploaded_images/`: Directory where users can upload images for classification.
+- `imagenet1000_clsid_to_human.txt`: Maps ImageNet IDs to human-readable labels.

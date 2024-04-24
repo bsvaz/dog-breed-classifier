@@ -26,6 +26,9 @@ from adjust_results4_isadog import adjust_results4_isadog
 from calculates_results_stats import calculates_results_stats
 from print_results import print_results
 
+# Import torch
+import torch
+
 # Main program function defined below
 def main():
     
@@ -44,8 +47,18 @@ def main():
     # Function that checks Pet Images in the Results Dictionary using results    
     check_creating_pet_image_labels(results)
 
+    print() # Only to jump a line.
+
+    # Set device
+    if torch.cuda.is_available():
+        device = 'cuda'
+        print('GPU is available. Used GPU.')
+    else:
+        device = 'cpu'
+        print('GPU is not available. Used CPU.')
+
     # Function that classify the images and update Results Dictionary with those
-    classify_images(in_arg.dir, results, in_arg.arch)
+    classify_images(in_arg.dir, results, in_arg.arch, device)
 
     # Adjusts the results dictionary to determine if classifier correctly 
     # classified images 'as a dog' or 'not a dog' 
